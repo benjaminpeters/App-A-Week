@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -21,33 +20,73 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wea-gV-Kcn">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <gestureRecognizers/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTO-pp-p2P">
-                                <rect key="frame" x="277" y="438" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lp8-H2-oBK">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Photos" style="plain" id="C6K-Ke-yrh">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eTO-pp-p2P">
+                                            <rect key="frame" x="20" y="7" width="73" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Photos"/>
+                                            <connections>
+                                                <action selector="loadImageButtonTapper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jwY-vD-6IN"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kanyesmile.png" translatesAutoresizingMaskIntoConstraints="NO" id="437-3s-Q69">
+                                <rect key="frame" x="132" y="203" width="87" height="128"/>
                                 <connections>
-                                    <action selector="loadImageButtonTapper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jwY-vD-6IN"/>
+                                    <outletCollection property="gestureRecognizers" destination="3fZ-xc-tBL" appends="YES" id="NQC-iQ-Poe"/>
+                                    <outletCollection property="gestureRecognizers" destination="fkp-0f-bGU" appends="YES" id="zOk-qe-qAe"/>
+                                    <outletCollection property="gestureRecognizers" destination="obN-Zb-pMJ" appends="YES" id="0ok-ez-ofy"/>
                                 </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottomMargin" secondItem="eTO-pp-p2P" secondAttribute="bottom" constant="132" id="0ws-oT-YTe"/>
-                            <constraint firstItem="eTO-pp-p2P" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="438" id="6Uq-wV-m7y"/>
+                            <constraint firstItem="lp8-H2-oBK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3Eo-vn-vGn"/>
+                            <constraint firstItem="lp8-H2-oBK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="100" id="M2q-NE-8Hw"/>
+                            <constraint firstAttribute="trailing" secondItem="lp8-H2-oBK" secondAttribute="trailing" id="NjC-4e-iuC"/>
                             <constraint firstItem="Wea-gV-Kcn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="No0-v6-TMP"/>
                             <constraint firstAttribute="trailing" secondItem="Wea-gV-Kcn" secondAttribute="trailing" id="dWM-nV-k8d"/>
-                            <constraint firstItem="eTO-pp-p2P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" id="knh-u0-6G9"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="lp8-H2-oBK" secondAttribute="bottom" id="eEM-3n-zp5"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Wea-gV-Kcn" secondAttribute="bottom" id="vkV-aq-NkY"/>
                             <constraint firstAttribute="topMargin" secondItem="Wea-gV-Kcn" secondAttribute="top" id="ycc-hi-hA2"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="Wea-gV-Kcn" id="4ck-wm-yEn"/>
+                        <outlet property="kanyeImageView" destination="437-3s-Q69" id="SPX-h2-prl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="3fZ-xc-tBL">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="Lq4-0O-z9U"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="gvv-XK-XSB"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="fkp-0f-bGU">
+                    <connections>
+                        <action selector="handlePinch:" destination="BYZ-38-t0r" id="aRY-Lf-e4H"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="Zap-1K-QfN"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="obN-Zb-pMJ">
+                    <connections>
+                        <action selector="handleRotate:" destination="BYZ-38-t0r" id="9T6-vY-hWv"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="h7b-K6-15w"/>
+                    </connections>
+                </rotationGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="211" y="337"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kanyesmile.png" width="2148" height="3000"/>
+    </resources>
 </document>
