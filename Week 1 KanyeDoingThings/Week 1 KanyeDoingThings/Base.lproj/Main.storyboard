@@ -35,6 +35,11 @@
                                             </connections>
                                         </button>
                                     </barButtonItem>
+                                    <barButtonItem systemItem="camera" id="0Rr-Wl-zIC">
+                                        <connections>
+                                            <action selector="takeImageButtonTapper:" destination="BYZ-38-t0r" id="ciJ-TP-bra"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kanyesmile.png" translatesAutoresizingMaskIntoConstraints="NO" id="437-3s-Q69">
