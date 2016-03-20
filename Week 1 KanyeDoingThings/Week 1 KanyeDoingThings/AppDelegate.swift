@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  KanyeDoingThings
+//  Week 1 KanyeDoingThings
 //
-//  Created by Ben Peters on 2015-09-02.
-//  Copyright (c) 2015 Orange Chips. All rights reserved.
+//  Created by Ben Peters on 2016-03-20.
+//  Copyright © 2016 Orange Chips. All rights reserved.
 //
 
 import UIKit

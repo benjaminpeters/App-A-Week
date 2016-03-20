@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>KanyeDoingThings.xcscheme</key>
+		<key>Week 1 KanyeDoingThings.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>40A9FD1A1B976339004EB763</key>
+		<key>40CEEC5C1C9F12820080FE12</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>40A9FD2F1B97633A004EB763</key>
+		<key>40CEEC701C9F12830080FE12</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>40CEEC7B1C9F12830080FE12</key>
 		<dict>
 			<key>primary</key>
 			<true/>

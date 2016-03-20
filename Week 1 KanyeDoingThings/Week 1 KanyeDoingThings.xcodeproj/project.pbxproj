@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40CEEC611C9F12830080FE12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEEC601C9F12830080FE12 /* AppDelegate.swift */; };
+		40CEEC631C9F12830080FE12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEEC621C9F12830080FE12 /* ViewController.swift */; };
+		40CEEC661C9F12830080FE12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40CEEC641C9F12830080FE12 /* Main.storyboard */; };
+		40CEEC681C9F12830080FE12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CEEC671C9F12830080FE12 /* Assets.xcassets */; };
+		40CEEC6B1C9F12830080FE12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40CEEC691C9F12830080FE12 /* LaunchScreen.storyboard */; };
+		40CEEC761C9F12830080FE12 /* Week_1_KanyeDoingThingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEEC751C9F12830080FE12 /* Week_1_KanyeDoingThingsTests.swift */; };
+		40CEEC811C9F12830080FE12 /* Week_1_KanyeDoingThingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEEC801C9F12830080FE12 /* Week_1_KanyeDoingThingsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40CEEC721C9F12830080FE12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40CEEC551C9F12820080FE12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40CEEC5C1C9F12820080FE12;
+			remoteInfo = "Week 1 KanyeDoingThings";
+		};
+		40CEEC7D1C9F12830080FE12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40CEEC551C9F12820080FE12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40CEEC5C1C9F12820080FE12;
+			remoteInfo = "Week 1 KanyeDoingThings";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		40CEEC5D1C9F12820080FE12 /* Week 1 KanyeDoingThings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Week 1 KanyeDoingThings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40CEEC601C9F12830080FE12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		40CEEC621C9F12830080FE12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40CEEC651C9F12830080FE12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40CEEC671C9F12830080FE12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40CEEC6A1C9F12830080FE12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40CEEC6C1C9F12830080FE12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40CEEC711C9F12830080FE12 /* Week 1 KanyeDoingThingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Week 1 KanyeDoingThingsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40CEEC751C9F12830080FE12 /* Week_1_KanyeDoingThingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week_1_KanyeDoingThingsTests.swift; sourceTree = "<group>"; };
+		40CEEC771C9F12830080FE12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40CEEC7C1C9F12830080FE12 /* Week 1 KanyeDoingThingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Week 1 KanyeDoingThingsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40CEEC801C9F12830080FE12 /* Week_1_KanyeDoingThingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week_1_KanyeDoingThingsUITests.swift; sourceTree = "<group>"; };
+		40CEEC821C9F12830080FE12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40CEEC5A1C9F12820080FE12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40CEEC6E1C9F12830080FE12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40CEEC791C9F12830080FE12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40CEEC541C9F12820080FE12 = {
+			isa = PBXGroup;
+			children = (
+				40CEEC5F1C9F12830080FE12 /* Week 1 KanyeDoingThings */,
+				40CEEC741C9F12830080FE12 /* Week 1 KanyeDoingThingsTests */,
+				40CEEC7F1C9F12830080FE12 /* Week 1 KanyeDoingThingsUITests */,
+				40CEEC5E1C9F12820080FE12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40CEEC5E1C9F12820080FE12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40CEEC5D1C9F12820080FE12 /* Week 1 KanyeDoingThings.app */,
+				40CEEC711C9F12830080FE12 /* Week 1 KanyeDoingThingsTests.xctest */,
+				40CEEC7C1C9F12830080FE12 /* Week 1 KanyeDoingThingsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40CEEC5F1C9F12830080FE12 /* Week 1 KanyeDoingThings */ = {
+			isa = PBXGroup;
+			children = (
+				40CEEC601C9F12830080FE12 /* AppDelegate.swift */,
+				40CEEC621C9F12830080FE12 /* ViewController.swift */,
+				40CEEC641C9F12830080FE12 /* Main.storyboard */,
+				40CEEC671C9F12830080FE12 /* Assets.xcassets */,
+				40CEEC691C9F12830080FE12 /* LaunchScreen.storyboard */,
+				40CEEC6C1C9F12830080FE12 /* Info.plist */,
+			);
+			path = "Week 1 KanyeDoingThings";
+			sourceTree = "<group>";
+		};
+		40CEEC741C9F12830080FE12 /* Week 1 KanyeDoingThingsTests */ = {
+			isa = PBXGroup;
+			children = (
+				40CEEC751C9F12830080FE12 /* Week_1_KanyeDoingThingsTests.swift */,
+				40CEEC771C9F12830080FE12 /* Info.plist */,
+			);
+			path = "Week 1 KanyeDoingThingsTests";
+			sourceTree = "<group>";
+		};
+		40CEEC7F1C9F12830080FE12 /* Week 1 KanyeDoingThingsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				40CEEC801C9F12830080FE12 /* Week_1_KanyeDoingThingsUITests.swift */,
+				40CEEC821C9F12830080FE12 /* Info.plist */,
+			);
+			path = "Week 1 KanyeDoingThingsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40CEEC5C1C9F12820080FE12 /* Week 1 KanyeDoingThings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40CEEC851C9F12830080FE12 /* Build configuration list for PBXNativeTarget "Week 1 KanyeDoingThings" */;
+			buildPhases = (
+				40CEEC591C9F12820080FE12 /* Sources */,
+				40CEEC5A1C9F12820080FE12 /* Frameworks */,
+				40CEEC5B1C9F12820080FE12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Week 1 KanyeDoingThings";
+			productName = "Week 1 KanyeDoingThings";
+			productReference = 40CEEC5D1C9F12820080FE12 /* Week 1 KanyeDoingThings.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40CEEC701C9F12830080FE12 /* Week 1 KanyeDoingThingsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40CEEC881C9F12830080FE12 /* Build configuration list for PBXNativeTarget "Week 1 KanyeDoingThingsTests" */;
+			buildPhases = (
+				40CEEC6D1C9F12830080FE12 /* Sources */,
+				40CEEC6E1C9F12830080FE12 /* Frameworks */,
+				40CEEC6F1C9F12830080FE12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40CEEC731C9F12830080FE12 /* PBXTargetDependency */,
+			);
+			name = "Week 1 KanyeDoingThingsTests";
+			productName = "Week 1 KanyeDoingThingsTests";
+			productReference = 40CEEC711C9F12830080FE12 /* Week 1 KanyeDoingThingsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		40CEEC7B1C9F12830080FE12 /* Week 1 KanyeDoingThingsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40CEEC8B1C9F12830080FE12 /* Build configuration list for PBXNativeTarget "Week 1 KanyeDoingThingsUITests" */;
+			buildPhases = (
+				40CEEC781C9F12830080FE12 /* Sources */,
+				40CEEC791C9F12830080FE12 /* Frameworks */,
+				40CEEC7A1C9F12830080FE12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40CEEC7E1C9F12830080FE12 /* PBXTargetDependency */,
+			);
+			name = "Week 1 KanyeDoingThingsUITests";
+			productName = "Week 1 KanyeDoingThingsUITests";
+			productReference = 40CEEC7C1C9F12830080FE12 /* Week 1 KanyeDoingThingsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40CEEC551C9F12820080FE12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Orange Chips";
+				TargetAttributes = {
+					40CEEC5C1C9F12820080FE12 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = AR9VRDLGRW;
+					};
+					40CEEC701C9F12830080FE12 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = AR9VRDLGRW;
+						TestTargetID = 40CEEC5C1C9F12820080FE12;
+					};
+					40CEEC7B1C9F12830080FE12 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = AR9VRDLGRW;
+						TestTargetID = 40CEEC5C1C9F12820080FE12;
+					};
+				};
+			};
+			buildConfigurationList = 40CEEC581C9F12820080FE12 /* Build configuration list for PBXProject "Week 1 KanyeDoingThings" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40CEEC541C9F12820080FE12;
+			productRefGroup = 40CEEC5E1C9F12820080FE12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40CEEC5C1C9F12820080FE12 /* Week 1 KanyeDoingThings */,
+				40CEEC701C9F12830080FE12 /* Week 1 KanyeDoingThingsTests */,
+				40CEEC7B1C9F12830080FE12 /* Week 1 KanyeDoingThingsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40CEEC5B1C9F12820080FE12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40CEEC6B1C9F12830080FE12 /* LaunchScreen.storyboard in Resources */,
+				40CEEC681C9F12830080FE12 /* Assets.xcassets in Resources */,
+				40CEEC661C9F12830080FE12 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40CEEC6F1C9F12830080FE12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40CEEC7A1C9F12830080FE12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40CEEC591C9F12820080FE12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40CEEC631C9F12830080FE12 /* ViewController.swift in Sources */,
+				40CEEC611C9F12830080FE12 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40CEEC6D1C9F12830080FE12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40CEEC761C9F12830080FE12 /* Week_1_KanyeDoingThingsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40CEEC781C9F12830080FE12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40CEEC811C9F12830080FE12 /* Week_1_KanyeDoingThingsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40CEEC731C9F12830080FE12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40CEEC5C1C9F12820080FE12 /* Week 1 KanyeDoingThings */;
+			targetProxy = 40CEEC721C9F12830080FE12 /* PBXContainerItemProxy */;
+		};
+		40CEEC7E1C9F12830080FE12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40CEEC5C1C9F12820080FE12 /* Week 1 KanyeDoingThings */;
+			targetProxy = 40CEEC7D1C9F12830080FE12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40CEEC641C9F12830080FE12 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40CEEC651C9F12830080FE12 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		40CEEC691C9F12830080FE12 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40CEEC6A1C9F12830080FE12 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40CEEC831C9F12830080FE12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40CEEC841C9F12830080FE12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40CEEC861C9F12830080FE12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Week 1 KanyeDoingThings/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.benpeters.Week-1-KanyeDoingThings";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		40CEEC871C9F12830080FE12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Week 1 KanyeDoingThings/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.benpeters.Week-1-KanyeDoingThings";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		40CEEC891C9F12830080FE12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Week 1 KanyeDoingThingsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.benpeters.Week-1-KanyeDoingThingsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Week 1 KanyeDoingThings.app/Week 1 KanyeDoingThings";
+			};
+			name = Debug;
+		};
+		40CEEC8A1C9F12830080FE12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Week 1 KanyeDoingThingsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.benpeters.Week-1-KanyeDoingThingsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Week 1 KanyeDoingThings.app/Week 1 KanyeDoingThings";
+			};
+			name = Release;
+		};
+		40CEEC8C1C9F12830080FE12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Week 1 KanyeDoingThingsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.benpeters.Week-1-KanyeDoingThingsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Week 1 KanyeDoingThings";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		40CEEC8D1C9F12830080FE12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Week 1 KanyeDoingThingsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.benpeters.Week-1-KanyeDoingThingsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Week 1 KanyeDoingThings";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40CEEC581C9F12820080FE12 /* Build configuration list for PBXProject "Week 1 KanyeDoingThings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40CEEC831C9F12830080FE12 /* Debug */,
+				40CEEC841C9F12830080FE12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40CEEC851C9F12830080FE12 /* Build configuration list for PBXNativeTarget "Week 1 KanyeDoingThings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40CEEC861C9F12830080FE12 /* Debug */,
+				40CEEC871C9F12830080FE12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		40CEEC881C9F12830080FE12 /* Build configuration list for PBXNativeTarget "Week 1 KanyeDoingThingsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40CEEC891C9F12830080FE12 /* Debug */,
+				40CEEC8A1C9F12830080FE12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		40CEEC8B1C9F12830080FE12 /* Build configuration list for PBXNativeTarget "Week 1 KanyeDoingThingsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40CEEC8C1C9F12830080FE12 /* Debug */,
+				40CEEC8D1C9F12830080FE12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40CEEC551C9F12820080FE12 /* Project object */;
+}

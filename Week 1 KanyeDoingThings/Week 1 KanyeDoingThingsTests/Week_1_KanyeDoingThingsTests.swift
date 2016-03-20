@@ -1,15 +1,15 @@
 //
-//  KanyeDoingThingsTests.swift
-//  KanyeDoingThingsTests
+//  Week_1_KanyeDoingThingsTests.swift
+//  Week 1 KanyeDoingThingsTests
 //
-//  Created by Ben Peters on 2015-09-02.
-//  Copyright (c) 2015 Orange Chips. All rights reserved.
+//  Created by Ben Peters on 2016-03-20.
+//  Copyright © 2016 Orange Chips. All rights reserved.
 //
 
-import UIKit
 import XCTest
+@testable import Week_1_KanyeDoingThings
 
-class KanyeDoingThingsTests: XCTestCase {
+class Week_1_KanyeDoingThingsTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -23,12 +23,12 @@ class KanyeDoingThingsTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock() {
+        self.measureBlock {
             // Put the code you want to measure the time of here.
         }
     }
