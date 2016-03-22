@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -24,6 +26,9 @@
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lp8-H2-oBK">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="2PD-US-2WY"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem title="Photos" style="plain" id="C6K-Ke-yrh">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eTO-pp-p2P">
@@ -31,7 +36,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Photos"/>
                                             <connections>
-                                                <action selector="loadImageButtonTapper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jwY-vD-6IN"/>
+                                                <action selector="loadImageButtonTapper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cTT-Sa-pVq"/>
                                             </connections>
                                         </button>
                                     </barButtonItem>
@@ -40,10 +45,15 @@
                                             <action selector="takeImageButtonTapper:" destination="BYZ-38-t0r" id="ciJ-TP-bra"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem systemItem="save" id="n9c-tA-Igw">
+                                        <connections>
+                                            <action selector="saveImageButtonTapper:" destination="BYZ-38-t0r" id="Nly-WD-EOk"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kanyesmile.png" translatesAutoresizingMaskIntoConstraints="NO" id="437-3s-Q69">
-                                <rect key="frame" x="132" y="203" width="87" height="128"/>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="kanyesmile.png" translatesAutoresizingMaskIntoConstraints="NO" id="437-3s-Q69">
+                                <rect key="frame" x="257" y="236" width="87" height="128"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="3fZ-xc-tBL" appends="YES" id="NQC-iQ-Poe"/>
                                     <outletCollection property="gestureRecognizers" destination="fkp-0f-bGU" appends="YES" id="zOk-qe-qAe"/>
@@ -53,13 +63,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Wea-gV-Kcn" firstAttribute="baseline" secondItem="lp8-H2-oBK" secondAttribute="baseline" id="0Bl-Iv-PsE"/>
                             <constraint firstItem="lp8-H2-oBK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3Eo-vn-vGn"/>
-                            <constraint firstItem="lp8-H2-oBK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="100" id="M2q-NE-8Hw"/>
                             <constraint firstAttribute="trailing" secondItem="lp8-H2-oBK" secondAttribute="trailing" id="NjC-4e-iuC"/>
                             <constraint firstItem="Wea-gV-Kcn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="No0-v6-TMP"/>
+                            <constraint firstItem="437-3s-Q69" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:1" constant="-513" id="VhX-GG-e9v"/>
+                            <constraint firstItem="437-3s-Q69" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerYWithinMargins" id="Zr5-oh-B90"/>
+                            <constraint firstItem="437-3s-Q69" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" id="aU4-2j-fZf"/>
                             <constraint firstAttribute="trailing" secondItem="Wea-gV-Kcn" secondAttribute="trailing" id="dWM-nV-k8d"/>
                             <constraint firstAttribute="bottomMargin" secondItem="lp8-H2-oBK" secondAttribute="bottom" id="eEM-3n-zp5"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="Wea-gV-Kcn" secondAttribute="bottom" id="vkV-aq-NkY"/>
                             <constraint firstAttribute="topMargin" secondItem="Wea-gV-Kcn" secondAttribute="top" id="ycc-hi-hA2"/>
                         </constraints>
                     </view>
