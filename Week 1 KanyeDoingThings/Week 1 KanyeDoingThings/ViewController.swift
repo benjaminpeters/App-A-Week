@@ -31,8 +31,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     }
     
-    @IBAction func saveImageButtonTapper(sender: UIBarButtonItem) {
+    func saveImageButtonTapper() {
+        
+        // Add a UIView then add the photos and stickers to it to save
         let DynamicView = UIView(frame: view.bounds)
+        self.view.addSubview(DynamicView)
         DynamicView.addSubview(imageView)
         DynamicView.addSubview(kanyeImageView)
         
@@ -62,6 +65,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
         imagePicker.delegate = self
         
+        let navigationBar = UINavigationBar(frame: CGRectMake(0, 0, self.view.frame.size.width, 44)) // Offset by 20 pixels vertically to take the status bar into account
+        
+        // Create a navigation item with a title
+        let navigationItem = UINavigationItem()
+        navigationItem.title = "Kanye Doing Things"
+        
+        let rightButton = UIBarButtonItem(title: "Save", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("saveImageButtonTapper"))
+        
+        navigationItem.rightBarButtonItem = rightButton
+        
+        navigationBar.items = [navigationItem]
+        
+        self.view.addSubview(navigationBar)
     }
 
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
@@ -111,6 +127,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 completion: nil)
         }
     }
+    
+    // Handle Kanye Pinch
     @IBAction func handlePinch(recognizer : UIPinchGestureRecognizer) {
         if let view = recognizer.view {
             view.transform = CGAffineTransformScale(view.transform,
@@ -119,6 +137,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
     
+    //Handle Kanye rotate
     @IBAction func handleRotate(recognizer : UIRotationGestureRecognizer) {
         if let view = recognizer.view {
             view.transform = CGAffineTransformRotate(view.transform, recognizer.rotation)
