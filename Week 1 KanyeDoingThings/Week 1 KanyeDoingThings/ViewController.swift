@@ -15,6 +15,28 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     let imagePicker = UIImagePickerController()
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "ios-linen.jpg")!)
+        
+        imagePicker.delegate = self
+        
+        // Offset by 20 pixels vertically to take the status bar into account
+        let navigationBar = UINavigationBar(frame: CGRectMake(0, 0, self.view.frame.size.width, 44))
+        
+        // Create a navigation item with a title
+        let navigationItem = UINavigationItem()
+        navigationItem.title = "Kanye Doing Things"
+        
+        let rightButton = UIBarButtonItem(title: "Save", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("saveImageButtonTapper"))
+        
+        navigationItem.rightBarButtonItem = rightButton
+        
+        navigationBar.items = [navigationItem]
+        
+        self.view.addSubview(navigationBar)
+    }
+    
     @IBAction func loadImageButtonTapper(sender: UIButton) {
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .PhotoLibrary
@@ -34,7 +56,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func saveImageButtonTapper() {
         
         // Add a UIView then add the photos and stickers to it to save
-        let DynamicView = UIView(frame: view.bounds)
+        let DynamicView = UIView(frame: imageView.bounds)
         self.view.addSubview(DynamicView)
         DynamicView.addSubview(imageView)
         DynamicView.addSubview(kanyeImageView)
@@ -58,32 +80,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "ios-linen.jpg")!)
-
-        imagePicker.delegate = self
-        
-        let navigationBar = UINavigationBar(frame: CGRectMake(0, 0, self.view.frame.size.width, 44)) // Offset by 20 pixels vertically to take the status bar into account
-        
-        // Create a navigation item with a title
-        let navigationItem = UINavigationItem()
-        navigationItem.title = "Kanye Doing Things"
-        
-        let rightButton = UIBarButtonItem(title: "Save", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("saveImageButtonTapper"))
-        
-        navigationItem.rightBarButtonItem = rightButton
-        
-        navigationBar.items = [navigationItem]
-        
-        self.view.addSubview(navigationBar)
-    }
 
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             imageView.contentMode = .ScaleAspectFit
             imageView.image = pickedImage
+            
+            // set up UIView to the dimensions of the picked background image 
+            
         }
         
         dismissViewControllerAnimated(true, completion: nil)
@@ -92,6 +96,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    // Gestures
     
     // Handle the PanGesture for a Kanye
     @IBAction func handlePan(recognizer: UIPanGestureRecognizer){
@@ -126,6 +132,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 animations: {recognizer.view!.center = finalPoint },
                 completion: nil)
         }
+        print("X:  \(kanyeImageView.frame.origin.x)  Y \((kanyeImageView.frame.origin.y))")
     }
     
     // Handle Kanye Pinch

@@ -20,9 +20,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wea-gV-Kcn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wea-gV-Kcn">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <gestureRecognizers/>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="kanyesmile.png" translatesAutoresizingMaskIntoConstraints="NO" id="437-3s-Q69">
+                                <rect key="frame" x="257" y="236" width="87" height="128"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3fZ-xc-tBL" appends="YES" id="NQC-iQ-Poe"/>
+                                    <outletCollection property="gestureRecognizers" destination="fkp-0f-bGU" appends="YES" id="zOk-qe-qAe"/>
+                                    <outletCollection property="gestureRecognizers" destination="obN-Zb-pMJ" appends="YES" id="0ok-ez-ofy"/>
+                                </connections>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lp8-H2-oBK">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
@@ -52,14 +60,6 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="kanyesmile.png" translatesAutoresizingMaskIntoConstraints="NO" id="437-3s-Q69">
-                                <rect key="frame" x="257" y="236" width="87" height="128"/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="3fZ-xc-tBL" appends="YES" id="NQC-iQ-Poe"/>
-                                    <outletCollection property="gestureRecognizers" destination="fkp-0f-bGU" appends="YES" id="zOk-qe-qAe"/>
-                                    <outletCollection property="gestureRecognizers" destination="obN-Zb-pMJ" appends="YES" id="0ok-ez-ofy"/>
-                                </connections>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
