@@ -17,6 +17,7 @@
 		40CEEC8F1C9F23E00080FE12 /* kanyesmile.png in Resources */ = {isa = PBXBuildFile; fileRef = 40CEEC8E1C9F23DF0080FE12 /* kanyesmile.png */; };
 		40CEEC921C9F33DE0080FE12 /* ios-linen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40CEEC901C9F33DE0080FE12 /* ios-linen.jpg */; };
 		40CEEC931C9F33DE0080FE12 /* kanyedoingthingsicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 40CEEC911C9F33DE0080FE12 /* kanyedoingthingsicon.png */; };
+		40CEECB71CA385790080FE12 /* kanyeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEECB61CA385780080FE12 /* kanyeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		40CEEC8E1C9F23DF0080FE12 /* kanyesmile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kanyesmile.png; sourceTree = "<group>"; };
 		40CEEC901C9F33DE0080FE12 /* ios-linen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ios-linen.jpg"; sourceTree = "<group>"; };
 		40CEEC911C9F33DE0080FE12 /* kanyedoingthingsicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kanyedoingthingsicon.png; sourceTree = "<group>"; };
+		40CEECB61CA385780080FE12 /* kanyeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kanyeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		40CEEC5F1C9F12830080FE12 /* Week 1 KanyeDoingThings */ = {
 			isa = PBXGroup;
 			children = (
+				40CEECB81CA3860C0080FE12 /* Kanye Stickers */,
 				40CEEC601C9F12830080FE12 /* AppDelegate.swift */,
 				40CEEC621C9F12830080FE12 /* ViewController.swift */,
 				40CEEC641C9F12830080FE12 /* Main.storyboard */,
@@ -132,6 +135,14 @@
 				40CEEC821C9F12830080FE12 /* Info.plist */,
 			);
 			path = "Week 1 KanyeDoingThingsUITests";
+			sourceTree = "<group>";
+		};
+		40CEECB81CA3860C0080FE12 /* Kanye Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				40CEECB61CA385780080FE12 /* kanyeView.swift */,
+			);
+			name = "Kanye Stickers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40CEECB71CA385790080FE12 /* kanyeView.swift in Sources */,
 				40CEEC631C9F12830080FE12 /* ViewController.swift in Sources */,
 				40CEEC611C9F12830080FE12 /* AppDelegate.swift in Sources */,
 			);
@@ -499,6 +511,7 @@
 				40CEEC871C9F12830080FE12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40CEEC881C9F12830080FE12 /* Build configuration list for PBXNativeTarget "Week 1 KanyeDoingThingsTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +520,7 @@
 				40CEEC8A1C9F12830080FE12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40CEEC8B1C9F12830080FE12 /* Build configuration list for PBXNativeTarget "Week 1 KanyeDoingThingsUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +529,7 @@
 				40CEEC8D1C9F12830080FE12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
